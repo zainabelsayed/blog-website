@@ -1,0 +1,22 @@
+<swiper
+  *ngIf="!loading; else elseBlock"
+  [config]="config"
+  [pagination]="pagination"
+  [spaceBetween]="20"
+  [loop]="false"
+  [grid]="{
+    rows: 3
+  }"
+  [slidesPerGroup]="3"
+  [slidesPerView]="3"
+  class="mySwiper blog-list"
+>
+  <ng-template swiperSlide *ngFor="let article of articles">
+    <app-article-card [article]="article"></app-article-card>
+  </ng-template>
+</swiper>
+<ng-template #elseBlock>
+<div class="spinner-border text-info p-2 loader" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</ng-template>

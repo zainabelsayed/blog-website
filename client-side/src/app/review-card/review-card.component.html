@@ -1,0 +1,19 @@
+<div class="card review-card border-0 shadow">
+    <div class="d-flex">
+        <figure class="me-1" *ngFor="let star of review.stars">
+            <img src="../../assets/images/star-icon.svg" alt="star rating">
+        </figure>
+    </div>
+    <div class="card-body p-0">
+      <p class="card-text review-card__text">{{review.description}}</p>
+      <div class="d-flex align-items-center review-card__data">
+        <figure class="review-card__image mb-0">
+            <img [src]="review.image" class="img-fluid" alt="">
+        </figure>
+        <div class="ms-3">
+            <p class="p-0 m-0 review-card__name">{{review.name}}</p>
+            <p class="p-0 m-0 review-card__title">{{review.title}}</p>
+        </div>
+      </div>
+    </div>
+  </div>

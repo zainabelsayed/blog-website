@@ -1,0 +1,30 @@
+@import '~src/sass/variables';
+.review-card{
+    padding: 3.75rem 2.5rem 2.5rem 2.5rem;
+    width: 80%;
+    margin: 0 auto;
+    &__text{
+        height: 6.5625rem;
+        margin-bottom: 4.375rem;
+    }
+    &__data{
+        margin-top: 1rem;
+    }
+    &__image{
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+    &__name{
+        font-weight: 700;
+        color: $dark-blue;
+        font-size: 1rem;
+    }
+    &__title{
+        font-size: .8125rem;
+    }
+}
+@media (min-width: 576px) {
+    .review-card{
+        width: auto;
+    }
+  }

@@ -1,0 +1,28 @@
+@import '~src/sass/variables';
+.footer{
+    padding: 3.375rem 0rem 2.5rem 0rem;
+    background-color: $dark-blue;
+    color: rgba($color: #ffffff, $alpha: 0.6);
+    &__logotext, &__newsletter, &__copy-rights{
+        font-size: .9375rem;
+    }
+    &__header{
+        font-weight: 500;
+        color: white;
+        margin-bottom: 1.25rem;
+    }
+    &__links{
+        font-size: .8125rem;
+    }
+    &__links li{
+        margin-bottom: .625rem;
+    }
+    &__links li a{
+       text-decoration: none;
+       color: rgba($color: #ffffff, $alpha: 0.6);
+    }
+    &__copy-rights{
+        margin-top: 9.375rem;
+    }
+
+}

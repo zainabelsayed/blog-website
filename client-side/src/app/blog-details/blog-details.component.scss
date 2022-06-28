@@ -1,0 +1,37 @@
+@import "~src/sass/variables";
+.blog-details {
+  padding: 10rem 0 20rem 0;
+  & h1 {
+    color: $dark-blue;
+    font-size: 3.4375rem;
+  }
+  &__author {
+    margin-bottom: 3.75rem;
+  }
+  &__author p {
+    font-size: 0.9375rem;
+    color: $grey;
+  }
+  &__image figure {
+    margin-bottom: 3.75rem;
+  }
+  &__text {
+    font-size: 1.125rem;
+    color: $grey;
+  }
+}
+.loader {
+  margin: 30% 50%;
+}
+@media (min-width: 576px) {
+    .blog-details{
+        &__header, &__text{
+            width:50%;
+            margin: 0 auto;
+        }
+        &__image {
+            width: 70%;
+            margin: 0 auto;
+          }
+    }
+  }

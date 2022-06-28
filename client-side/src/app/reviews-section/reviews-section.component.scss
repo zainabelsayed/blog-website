@@ -1,0 +1,15 @@
+.reviews-section {
+  padding-bottom: 10rem;
+  &__container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 576px) {
+  .reviews-section {
+    &__container {
+      width: 91.3%;
+      margin-left: 8.7%;
+    }
+  }
+}

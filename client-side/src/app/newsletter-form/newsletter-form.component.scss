@@ -1,0 +1,11 @@
+.newsletterForm{
+    &__input{
+        background-color: rgba($color: #ffffff, $alpha: 0.1) !important;
+        width: 100%;
+        padding: .875rem 1rem;
+    }
+    &__sendbtn{
+        margin-left: -3rem;
+        margin-top: 1rem;
+    }
+}

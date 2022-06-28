@@ -1,0 +1,38 @@
+<form
+  #newsletterForm="ngForm"
+  (ngSubmit)="submitNewsletterForm(newsletterForm.value)"
+  class="newsletterForm"
+>
+  <div class="d-flex align-items-center">
+    <input
+      name="email"
+      #email="ngModel"
+      type="email"
+      class="form-control newsletterForm__input border-0"
+      placeholder="Email"
+      aria-label="Email"
+      aria-describedby="button-addon2"
+      [(ngModel)]="userData.email"
+      pattern="^\S+@\S+$"
+      required
+    />
+    <button class="btn newsletterForm__sendbtn" type="submit" id="button-addon2">
+      <figure>
+        <img src="../../assets/images/arrow-right-grey.svg" alt="send arrow" />
+      </figure>
+    </button>
+  </div>
+  <div
+    *ngIf="
+      (email.touched && !email.valid) ||
+      (!email.value?.email && newsletterForm.submitted)
+    "
+  >
+    <small class="text-danger" *ngIf="email.errors?.required">
+      This field is required
+    </small>
+    <small class="text-danger" *ngIf="email.errors?.pattern">
+      Please enter a valid email address
+    </small>
+  </div>
+</form>

@@ -1,0 +1,13 @@
+<div class="card border-0" (click)="openBlogDetails()">
+    <img [src]="article.articleImage" class="card-img-top img-fluid card__img" [alt]="article.articleTitle" />
+    <div class="card-body">
+      <h5 class="card-title card__title">{{ article.articleTitle }}</h5>
+      <p class="card-text card__text">{{ article.articleSubtitle }}</p>
+    </div>
+    <div class="card__author ps-3 d-flex justify-content-start align-items-center">
+        <figure>
+            <img [src]="article.author" [alt]="article.authorName">
+        </figure>
+        <p class="ps-2">{{article.authorName}} <span class="px-1">|</span> {{article.date}}</p>
+      </div>
+  </div>

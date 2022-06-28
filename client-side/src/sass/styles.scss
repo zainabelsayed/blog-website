@@ -1,0 +1,37 @@
+@import "./variables";
+@import "./mixins";
+@font-face {
+  font-family: "Cabin";
+  src: local("Cabin"),
+    url(../assets/fonts/static/Cabin/Cabin-Regular.ttf) format("truetype");
+}
+
+// general styles
+
+html {
+  font-size: 80%;
+}
+body {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+}
+
+section {
+  margin-top: 10rem;
+    h2{
+        font-size: 3.4375rem;
+        color: $dark-blue;
+        padding-bottom: 1.25rem;
+    }
+    p{
+        font-size: 1.125rem;
+        color:$grey;
+        padding-bottom: 1.875rem;
+    }
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 100%;
+  }
+}

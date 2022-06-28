@@ -1,0 +1,16 @@
+.hub-section{
+    &__container{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 576px) {
+    .hub-section{
+        &__container{
+            width: 91.3%;
+            overflow-x: hidden;
+        }
+    }
+  }
+  

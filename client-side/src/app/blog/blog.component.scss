@@ -1,0 +1,15 @@
+@import "~src/sass/variables";
+.blog{
+    padding:9.375rem 0 10rem 0;
+    background-color: $white;
+    h1{
+        color: $dark-blue;
+        font-size: 3.4375rem;
+        padding-bottom: 1.25rem;
+      }
+      p{
+        font-size: 1.125rem;
+        color: $grey;
+        margin-bottom: 3.75rem;
+      }
+}

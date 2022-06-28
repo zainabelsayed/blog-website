@@ -1,0 +1,35 @@
+@import "~swiper/scss";
+@import "~swiper/scss/grid";
+@import "~swiper/scss/pagination";
+@import "~src/sass/variables";
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog-list{
+  padding-bottom: 3.75rem !important;
+}
+.swiper-grid-column .swiper-wrapper{
+  flex-direction: row;
+}
+.swiper-slide {
+  margin-top: 0 !important;
+  margin-bottom: 40px;
+}
+.swiper-pagination-bullet{
+    width: 2.8125rem;
+    height: 2.625rem;
+    border-radius: .25rem;
+    background-color: transparent;
+    padding: .65rem 0rem;
+    color: $grey;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: rgba(105, 118, 148, 0.1);
+}
+.loader{
+  margin: 10% 50%;
+}

@@ -1,0 +1,31 @@
+<form
+  #earlyAccessForm="ngForm"
+  (ngSubmit)="submitEarlyAccessForm(earlyAccessForm.value)"
+  class="form"
+>
+  <div class="row  align-items-baseline">
+    <div class="col-lg-3 col-6">
+      <input
+        name="email"
+        #email="ngModel"
+        type="email"
+        class="form-control form__input"
+        placeholder="Your email"
+        [(ngModel)]="userData.email"
+        pattern="^\S+@\S+$"
+        required
+      />
+    </div>
+    <div class="col-lg-3 col-6">
+      <button type="submit" class="btn form__submit-btn">Get Early Access</button>
+    </div>
+  </div>
+  <div *ngIf="email.touched && !email.valid || !email.value?.email && earlyAccessForm.submitted">
+    <small class="text-danger" *ngIf="email.errors?.required">
+        This field is required
+    </small>
+    <small class="text-danger" *ngIf="email.errors?.pattern">
+        Please enter a valid email address
+    </small>
+  </div>
+</form>
