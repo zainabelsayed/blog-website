@@ -11,7 +11,7 @@
   [slidesPerView]="3"
   class="mySwiper blog-list"
 >
-  <ng-template swiperSlide *ngFor="let article of articles">
+  <ng-template swiperSlide *ngFor="let article of articles" class="blog-list__card">
     <app-article-card [article]="article"></app-article-card>
   </ng-template>
 </swiper>

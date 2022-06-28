@@ -10,13 +10,13 @@
 }
 .blog-list{
   padding-bottom: 3.75rem !important;
+  &__card{
+    margin-top: 0 !important;
+    margin-bottom: 2.5rem;
+  }
 }
 .swiper-grid-column .swiper-wrapper{
   flex-direction: row;
-}
-.swiper-slide {
-  margin-top: 0 !important;
-  margin-bottom: 40px;
 }
 .swiper-pagination-bullet{
     width: 2.8125rem;
