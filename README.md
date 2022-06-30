@@ -1,6 +1,6 @@
 # blog-website
 It's a simple but elegant blog website built with Angular12, Swiperjs, Bootstrap5 and Json server for the mock api
-here is a <a href="https://heroic-zuccutto-49e658.netlify.app/">live demo</a>
+here is a <a href="https://heroic-zuccutto-49e658.netlify.app/" target="_blank">live demo</a>
 ## how it works
 -first: go to the api folder and open the terminal in the root of the folder and run ```json-server api.json``` to run the local server
 
