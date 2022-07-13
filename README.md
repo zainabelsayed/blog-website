@@ -1,6 +1,6 @@
 # blog-website
 It's a blog website built with Angular12, Swiperjs, Bootstrap5,Sass,BEM methodology and Json server for the api
-here is a <a href="https://heroic-zuccutto-49e658.netlify.app/" target="_blank">live demo</a>
+here is a <a href="https://cool-tanuki-468b58.netlify.app/#/" target="_blank">live demo</a>
 ## how it works
 -first: go to the api folder and open the terminal in the root of the folder and run ```json-server api.json``` to run the local server
 
