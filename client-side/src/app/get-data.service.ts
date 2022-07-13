@@ -7,7 +7,7 @@ import { Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class GetDataService {
-  url = 'http://localhost:3000';
+  url = 'https://mock-api--1.herokuapp.com';
   constructor(private http: HttpClient) { }
   getArticles(): Observable<any> {
     return this.http.get(`${this.url}/articles`)

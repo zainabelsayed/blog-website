@@ -1,0 +1,29 @@
+@import "~src/sass/mixins";
+.task-manamgement-section{
+    &__image{
+        @include background-image("../../../assets/images/task-management-img.png");
+        background-position: center left;
+        background-size: contain;
+        height: 35.3125rem;
+        margin-left: 1.2%;
+    }
+    &__event{
+        margin-left: 30%;
+        object-fit: contain;
+        &:nth-child(1){
+            margin-top: 3.75rem;
+            height: auto;
+        }
+        &:nth-child(2){
+            margin-top: 1.25rem;
+        }
+    }
+}
+@media (min-width: 576px){
+    .task-manamgement-section{
+        &__event{
+            margin-left: 41%;
+        }
+    }
+    
+}
